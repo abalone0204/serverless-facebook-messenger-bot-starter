@@ -1,0 +1,17 @@
+{
+    "apiGetCallbackTemplate": {
+        "application/json": {
+            "operation": "verify",
+            "secret": "${fb_secret_key}",
+            "verify_token": "$input.params('hub.verify_token')",
+            "challenge":"$input.params('hub.challenge')"
+        }
+    },
+    "apiPostCallbackTemplate": {
+        "application/json": {
+            "secret": "${fb_secret_key}",
+            "operation": "reply",
+            "body": "$input.json('$')"
+        }        
+    }
+}
