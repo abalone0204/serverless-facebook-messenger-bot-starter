@@ -16,13 +16,29 @@
 
     - check the [official document](docs.serverless.com)
 
+- If you can read Chinese, you can read my article : [實作 Serverless 的 facebook messenger bot](http://abalone0204.github.io/2016/05/29/sls-fb-bot)
+
 - Create a serverless project
 
 ```
 serverless project create
 ```
 
-- clone this repo
+- clone this repo into your project directory
 
+```
+git clone git@github.com:abalone0204/erverless-facebook-messenger-bot-starter.git .
+```
 
+- Install dependencies
+
+```
+npm install
+```
+
+- Deploy
+
+```
+serverless dash deploy
+```
 
